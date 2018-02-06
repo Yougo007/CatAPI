@@ -1,24 +1,52 @@
-# README
+# Cat API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fetch cat data from thecatapi.com and store it.
 
-Things you may want to cover:
+### Requirements
+* Rails version
+`>= 5.1.4`
 
 * Ruby version
+`>= 2.4.1`
 
-* System dependencies
+## Getting Started
 
-* Configuration
 
-* Database creation
+Bundle gem dependencies
 
-* Database initialization
+```bash
+$ bundle install
+```
 
-* How to run the test suite
+Database creation and initialization
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+$ bundle exec rake db:create
+$ bundle exec rake db:migrate
+```
 
-* Deployment instructions
+Start the server
 
-* ...
+```bash
+$ rails server
+```
+
+## API Endpoints
+
+GET cats from thecatapi.com and store it
+`On Postman or a web browser`
+
+```bash
+http://localhost:3000/cat
+```
+
+GET an history of all stored cat API responses
+```bash
+http://localhost:3000/history
+```
+
+
+License
+----
+
+MIT
