@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 20180206195546) do
   enable_extension "plpgsql"
 
   create_table "histories", id: false, force: :cascade do |t|
-    t.string "id"
     t.string "url"
+    t.string "id"
     t.string "source_url"
   end
 
