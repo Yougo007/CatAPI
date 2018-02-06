@@ -13,9 +13,15 @@ class CatController < ApplicationController
         url: image['url'],
         source_url: image['source_url']
       })
+
+      api_response = format_data(parsed_response)
+      status = 200
+    else
+      api_response = {}
+      status = 500
     end
 
-    render json: format_data(parsed_response), status: 200
+    render json: api_response, status: status
   end
 
   private
