@@ -1,0 +1,13 @@
+       Prefix Verb   URI Pattern            Controller#Action
+    cat_index GET    /cat(.:format)         cat#index
+              POST   /cat(.:format)         cat#create
+          cat GET    /cat/:id(.:format)     cat#show
+              PATCH  /cat/:id(.:format)     cat#update
+              PUT    /cat/:id(.:format)     cat#update
+              DELETE /cat/:id(.:format)     cat#destroy
+history_index GET    /history(.:format)     history#index
+              POST   /history(.:format)     history#create
+      history GET    /history/:id(.:format) history#show
+              PATCH  /history/:id(.:format) history#update
+              PUT    /history/:id(.:format) history#update
+              DELETE /history/:id(.:format) history#destroy
